@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  num_of_matches: 1
+  num_of_players: 1
+
+two:
+  type: 
+  num_of_matches: 1
+  num_of_players: 1

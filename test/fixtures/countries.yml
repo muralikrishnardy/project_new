@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  population: 1
+  capital: MyString
+  no_of_states: 1
+
+two:
+  population: 1
+  capital: MyString
+  no_of_states: 1

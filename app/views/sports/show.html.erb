@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @sport.type %>
+</p>
+
+<p>
+  <strong>Num of matches:</strong>
+  <%= @sport.num_of_matches %>
+</p>
+
+<p>
+  <strong>Num of players:</strong>
+  <%= @sport.num_of_players %>
+</p>
+
+<%= link_to 'Edit', edit_sport_path(@sport) %> |
+<%= link_to 'Back', sports_path %>

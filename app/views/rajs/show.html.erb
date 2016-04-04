@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @raj.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @raj.age %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @raj.salary %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @raj.location %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @raj.job %>
+</p>
+
+<%= link_to 'Edit', edit_raj_path(@raj) %> |
+<%= link_to 'Back', rajs_path %>

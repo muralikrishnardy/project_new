@@ -1,0 +1,37 @@
+<h1>Listing krishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Is succes</th>
+      <th>User count</th>
+      <th>Employe</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @krishes.each do |krish| %>
+      <tr>
+        <td><%= krish.name %></td>
+        <td><%= krish.location %></td>
+        <td><%= krish.is_succes %></td>
+        <td><%= krish.user_count %></td>
+        <td><%= krish.employe_id %></td>
+        <td><%= krish.user_id %></td>
+        <td><%= link_to 'Show', krish %></td>
+        <td><%= link_to 'Edit', edit_krish_path(krish) %></td>
+        <td><%= link_to 'Destroy', krish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Krish', new_krish_path %>

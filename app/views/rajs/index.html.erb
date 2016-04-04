@@ -1,0 +1,35 @@
+<h1>Listing rajs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Location</th>
+      <th>Job</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rajs.each do |raj| %>
+      <tr>
+        <td><%= raj.name %></td>
+        <td><%= raj.age %></td>
+        <td><%= raj.salary %></td>
+        <td><%= raj.location %></td>
+        <td><%= raj.job %></td>
+        <td><%= link_to 'Show', raj %></td>
+        <td><%= link_to 'Edit', edit_raj_path(raj) %></td>
+        <td><%= link_to 'Destroy', raj, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Raj', new_raj_path %>

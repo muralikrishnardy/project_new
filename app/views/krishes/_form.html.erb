@@ -1,0 +1,49 @@
+<%= form_for(@krish) do |f| %>
+  <% if @krish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@krish.errors.count, "error") %> prohibited this krish from being saved:</h2>
+
+      <ul>
+      <% @krish.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :is_succes %><br>
+    <%= f.check_box :is_succes %>
+  </div>
+  <div class="field">
+    <%= f.label :user_count %><br>
+    <%= f.number_field :user_count %>
+  </div>
+  <div class="field">
+    <%= f.label :employe_id %><br>
+    <%= f.number_field :employe_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+    <!--<div class="field">-->
+      <%#= f.label :email %><br>
+      <!--<%#= f.text_field :email %>-->
+      <!--</div>-->
+    <!--<div class="field">-->
+      <%#= f.label :email_confirmation%><br>
+      <!--<%#= f.text_field :email_confirmation%>-->
+    <!--</div>-->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

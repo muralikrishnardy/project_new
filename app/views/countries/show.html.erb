@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @country.population %>
+</p>
+
+<p>
+  <strong>Capital:</strong>
+  <%= @country.capital %>
+</p>
+
+<p>
+  <strong>No of states:</strong>
+  <%= @country.no_of_states %>
+</p>
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
